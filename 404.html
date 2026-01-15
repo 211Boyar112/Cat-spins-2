@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seite nicht gefunden - 404</title>
+    <meta name="description" content="Die von Ihnen gesuchte Seite wurde nicht gefunden. Hier finden Sie alternative Seiten oder können zur Startseite zurückkehren.">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Seite nicht gefunden (404) – Cat Spins Casino Informationsportal">
+    <meta property="og:description" content="Die gesuchte Seite existiert nicht. Kehren Sie zur Startseite zurück.">
+    <meta property="og:url" content="https://cat-spins.it.com/404">
+    <meta property="og:type" content="website">
+    
+    <style>
+        /* Reset & Base Styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            background-color: #f9f9f9; 
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 0 20px; 
+            flex: 1;
+        }
+        
+        /* Header */
+        .error-header { 
+            background: linear-gradient(135deg, #2d1152 0%, #4a1e6b 100%); 
+            color: white; 
+            padding: 2rem 0; 
+            text-align: center; 
+        }
+        .error-header h1 { 
+            font-size: 2.2rem; 
+            margin-bottom: 0.5rem; 
+            font-weight: 700;
+        }
+        .error-header p { 
+            font-size: 1.1rem; 
+            opacity: 0.9; 
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        /* Navigation */
+        .error-nav {
+            background-color: #2d1152;
+            padding: 1rem 0;
+        }
+        .nav-container { 
+            display: flex; 
+            justify-content: center; 
+            flex-wrap: wrap; 
+            gap: 1.5rem; 
+        }
+        .error-nav a { 
+            color: white; 
+            text-decoration: none; 
+            font-weight: 500; 
+            padding: 0.5rem 0;
+            position: relative;
+        }
+        .error-nav a:hover:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #ff66a3;
+        }
+        
+        /* Main Error Content */
+        .error-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 4rem 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .error-code {
+            font-size: 8rem;
+            font-weight: 900;
+            color: #4a1e6b;
+            line-height: 1;
+            margin-bottom: 1rem;
+            text-shadow: 3px 3px 0 rgba(139, 91, 179, 0.1);
+        }
+        
+        .error-code span {
+            display: inline-block;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .error-code span:nth-child(1) { animation-delay: 0s; }
+        .error-code span:nth-child(2) { animation-delay: 0.2s; }
+        .error-code span:nth-child(3) { animation-delay: 0.4s; }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .error-title {
+            font-size: 2rem;
+            color: #4a1e6b;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        
+        .error-message {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+            max-width: 600px;
+        }
+        
+        /* Cat Animation */
+        .cat-animation {
+            width: 200px;
+            height: 200px;
+            margin: 2rem auto;
+            position: relative;
+        }
+        
+        .cat-body {
+            width: 120px;
+            height: 80px;
+            background: linear-gradient(135deg, #4a1e6b 0%, #8b5bb3 100%);
+            border-radius: 60px 60px 40px 40px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: catBody 3s ease-in-out infinite;
+        }
+        
+        .cat-ear {
+            width: 30px;
+            height: 40px;
+            background: #4a1e6b;
+            position: absolute;
+            top: -20px;
+            border-radius: 50%;
+        }
+        
+        .cat-ear-left {
+            left: 20px;
+            transform: rotate(-20deg);
+        }
+        
+        .cat-ear-right {
+            right: 20px;
+            transform: rotate(20deg);
+        }
+        
+        .cat-eye {
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 20px;
+            animation: catBlink 4s ease-in-out infinite;
+        }
+        
+        .cat-eye-left {
+            left: 30px;
+        }
+        
+        .cat-eye-right {
+            right: 30px;
+        }
+        
+        .cat-pupil {
+            width: 8px;
+            height: 8px;
+            background-color: #333;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .cat-tail {
+            width: 80px;
+            height: 20px;
+            background: #8b5bb3;
+            position: absolute;
+            bottom: 20px;
+            right: -60px;
+            border-radius: 10px;
+            animation: catTail 2s ease-in-out infinite;
+        }
+        
+        @keyframes catBody {
+            0%, 100% { transform: translate(-50%, -50%) rotate(0deg); }
+            25% { transform: translate(-50%, -50%) rotate(5deg); }
+            75% { transform: translate(-50%, -50%) rotate(-5deg); }
+        }
+        
+        @keyframes catBlink {
+            0%, 45%, 55%, 100% { height: 20px; }
+            50% { height: 2px; }
+        }
+        
+        @keyframes catTail {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(30deg); }
+            75% { transform: rotate(-30deg); }
+        }
+        
+        /* Search Box */
+        .search-container {
+            max-width: 500px;
+            width: 100%;
+            margin: 2rem auto;
+        }
+        
+        .search-box {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .search-input {
+            flex: 1;
+            padding: 0.8rem 1rem;
+            border: 2px solid #d9e1ff;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.2s ease;
+        }
+        
+        .search-input:focus {
+            outline: none;
+            border-color: #8b5bb3;
+            box-shadow: 0 0 0 3px rgba(139, 91, 179, 0.1);
+        }
+        
+        .search-button {
+            background: linear-gradient(135deg, #4a1e6b 0%, #8b5bb3 100%);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            border: none;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+        
+        .search-button:hover {
+            transform: translateY(-2px);
+        }
+        
+        /* Popular Pages */
+        .popular-pages {
+            margin: 3rem 0;
+            width: 100%;
+        }
+        
+        .popular-pages h3 {
+            color: #4a1e6b;
+            margin-bottom: 1.5rem;
+            font-size: 1.4rem;
+            text-align: center;
+        }
+        
+        .pages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .page-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            text-align: left;
+        }
+        
+        .page-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+        
+        .page-card h4 {
+            color: #4a1e6b;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .page-card p {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+        
+        .page-card a {
+            color: #8b5bb3;
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+        
+        .page-card a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Action Buttons */
+        .action-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+        
+        .primary-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #4a1e6b 0%, #8b5bb3 100%);
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .primary-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(139, 91, 179, 0.3);
+            color: white;
+            text-decoration: none;
+        }
+        
+        .secondary-button {
+            display: inline-block;
+            background-color: #f0f4ff;
+            color: #4a1e6b;
+            padding: 0.8rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            border: 1px solid #d9e1ff;
+            transition: all 0.2s ease;
+        }
+        
+        .secondary-button:hover {
+            background-color: #e1e8ff;
+            color: #4a1e6b;
+            text-decoration: none;
+        }
+        
+        /* Technical Info */
+        .technical-info {
+            background-color: #f8f5ff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 3rem;
+            border: 1px solid #e9e1ff;
+            text-align: left;
+            max-width: 600px;
+        }
+        
+        .technical-info h4 {
+            color: #4a1e6b;
+            margin-bottom: 0.5rem;
+        }
+        
+        .technical-info p {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .error-details {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 6px;
+            font-family: monospace;
+            font-size: 0.85rem;
+            color: #666;
+            margin-top: 0.5rem;
+            border: 1px solid #e9e1ff;
+            word-break: break-all;
+        }
+        
+        /* Footer */
+        footer { 
+            background-color: #2d1152; 
+            color: white; 
+            padding: 3rem 0 2rem; 
+            margin-top: auto; 
+        }
+        .footer-links { 
+            display: flex; 
+            justify-content: center; 
+            flex-wrap: wrap; 
+            gap: 2rem; 
+            margin-bottom: 2rem; 
+        }
+        footer a { 
+            color: #ccc; 
+            text-decoration: none; 
+            font-size: 0.95rem;
+        }
+        footer a:hover { 
+            color: white; 
+            text-decoration: underline;
+        }
+        footer p {
+            color: #aaa;
+            font-size: 0.9rem;
+            margin-bottom: 0;
+            text-align: center;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .error-header h1 { 
+                font-size: 1.8rem; 
+            }
+            
+            .error-code {
+                font-size: 6rem;
+            }
+            
+            .error-title {
+                font-size: 1.6rem;
+            }
+            
+            .error-message {
+                font-size: 1.1rem;
+            }
+            
+            .nav-container { 
+                flex-direction: column; 
+                align-items: center; 
+                gap: 1rem; 
+            }
+            
+            .pages-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .action-buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .primary-button,
+            .secondary-button {
+                text-align: center;
+                width: 100%;
+            }
+            
+            .search-box {
+                flex-direction: column;
+            }
+            
+            .search-button {
+                width: 100%;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .error-header {
+                padding: 1.5rem 0;
+            }
+            
+            .error-content {
+                padding: 2rem 0;
+            }
+            
+            .error-code {
+                font-size: 4rem;
+            }
+            
+            .cat-animation {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .cat-body {
+                width: 100px;
+                height: 70px;
+            }
+            
+            .footer-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+            
+            .technical-info {
+                padding: 1rem;
+            }
+        }
+        
+        /* Print Styles */
+        @media print {
+            .error-header {
+                background: none;
+                color: black;
+                padding: 1rem 0;
+            }
+            
+            .error-nav, .cat-animation, .search-container, .action-buttons, footer {
+                display: none;
+            }
+            
+            .error-content {
+                padding: 1rem 0;
+            }
+            
+            .error-code {
+                color: black;
+                text-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="error-header">
+        <div class="container">
+            <h1>Cat Spins Casino Informationsportal</h1>
+            <p>Ihre Quelle für Informationen zu Online-Casinos und Bonusangeboten</p>
+        </div>
+    </header>
+    
+    <!-- Navigation -->
+    <nav class="error-nav">
+        <div class="container nav-container">
+            <a href="index">Startseite</a>
+            <a href="datenschutz">Datenschutz</a>
+            <a href="impressum">Impressum</a>
+            <a href="haftungsausschluss">Haftungsausschluss</a>
+            <a href="kontakt">Kontakt</a>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main class="container">
+        <div class="error-content">
+            <div class="error-code">
+                <span>4</span><span>0</span><span>4</span>
+            </div>
+            
+            <div class="cat-animation">
+                <div class="cat-body">
+                    <div class="cat-ear cat-ear-left"></div>
+                    <div class="cat-ear cat-ear-right"></div>
+                    <div class="cat-eye cat-eye-left">
+                        <div class="cat-pupil"></div>
+                    </div>
+                    <div class="cat-eye cat-eye-right">
+                        <div class="cat-pupil"></div>
+                    </div>
+                    <div class="cat-tail"></div>
+                </div>
+            </div>
+            
+            <h2 class="error-title">Ups! Diese Seite ist verschwunden</h2>
+            
+            <p class="error-message">
+                Die von Ihnen gesuchte Seite konnte nicht gefunden werden. 
+                Vielleicht hat sich unsere Katze mit ihr versteckt oder die Seite existiert nicht mehr.
+            </p>
+            
+            <!-- Search Box -->
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" class="search-input" id="searchInput" placeholder="Was suchen Sie?">
+                    <button type="button" class="search-button" id="searchButton">Suchen</button>
+                </div>
+                <p style="color: #666; font-size: 0.9rem;">
+                    Versuchen Sie, nach dem gewünschten Inhalt zu suchen.
+                </p>
+            </div>
+            
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+                <a href="index" class="primary-button">Zur Startseite</a>
+                <a href="javascript:history.back()" class="secondary-button">Zurück zur vorherigen Seite</a>
+            </div>
+            
+            <!-- Popular Pages -->
+            <div class="popular-pages">
+                <h3>Beliebte Seiten, die Sie interessieren könnten</h3>
+                
+                <div class="pages-grid">
+                    <div class="page-card">
+                        <h4>Cat Spins Casino Guide</h4>
+                        <p>Umfassender Guide zu Cat Spins Casino mit Bonusangeboten und Free Spins</p>
+                        <a href="index">Zur Startseite →</a>
+                    </div>
+                    
+                    <div class="page-card">
+                        <h4>Verantwortungsvolles Spielen</h4>
+                        <p>Wichtige Richtlinien und Hilfsangebote für sicheres Glücksspiel</p>
+                        <a href="verantwortungsvolles-spielen">Mehr erfahren →</a>
+                    </div>
+                    
+                    <div class="page-card">
+                        <h4>Kontakt & Support</h4>
+                        <p>Haben Sie Fragen? Kontaktieren Sie unser Team</p>
+                        <a href="kontakt">Kontakt aufnehmen →</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Technical Information -->
+            <div class="technical-info">
+                <h4>Technische Informationen</h4>
+                <p><strong>Fehler:</strong> 404 - Seite nicht gefunden</p>
+                <p><strong>URL:</strong> <span id="currentUrl"></span></p>
+                <p><strong>Empfehlung:</strong></p>
+                <div class="error-details">
+                    • Überprüfen Sie die URL auf Tippfehler<br>
+                    • Nutzen Sie die Suchfunktion oben<br>
+                    • Besuchen Sie unsere Startseite<br>
+                    • Bei weiteren Fragen kontaktieren Sie uns
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="index">Startseite</a>
+                <a href="datenschutz">Datenschutzerklärung</a>
+                <a href="impressum">Impressum</a>
+                <a href="haftungsausschluss">Haftungsausschluss</a>
+                <a href="verantwortungsvolles-spielen">Verantwortungsvolles Spielen</a>
+                <a href="kontakt">Kontakt</a>
+            </div>
+            <p>&copy; 2025 cat-spins.it.com – Informationsportal zu Online-Casinos. Mindestalter: 18 Jahre. Glücksspiel kann süchtig machen.</p>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script>
+        // Display current URL
+        document.getElementById('currentUrl').textContent = window.location.href;
+        
+        // Search functionality
+        document.getElementById('searchButton').addEventListener('click', function() {
+            performSearch();
+        });
+        
+        document.getElementById('searchInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                performSearch();
+            }
+        });
+        
+        function performSearch() {
+            const searchTerm = document.getElementById('searchInput').value.trim();
+            if (searchTerm) {
+                // In a real implementation, this would redirect to a search results page
+                // For now, we'll show a message and suggest relevant pages
+                alert(`Suche nach: "${searchTerm}"\n\nIn einer vollständigen Implementierung würde dies zu Suchergebnissen führen.\n\nVersuchen Sie es auf unserer Startseite mit der Suchfunktion.`);
+                
+                // Clear input
+                document.getElementById('searchInput').value = '';
+                
+                // Focus back on input
+                document.getElementById('searchInput').focus();
+            }
+        }
+        
+        // Track 404 errors for analytics (simulated)
+        function track404Error() {
+            const errorData = {
+                url: window.location.href,
+                referrer: document.referrer || 'Direct',
+                timestamp: new Date().toISOString(),
+                userAgent: navigator.userAgent
+            };
+            
+            // In a real implementation, you would send this to your analytics service
+            console.log('404 Error tracked:', errorData);
+            
+            // Store in localStorage for potential reporting
+            const errors = JSON.parse(localStorage.getItem('404_errors') || '[]');
+            errors.push(errorData);
+            localStorage.setItem('404_errors', JSON.stringify(errors.slice(-10))); // Keep last 10
+        }
+        
+        document.addEventListener('DOMContentLoaded', track404Error);
+        
+        // Suggest similar pages based on URL
+        function suggestSimilarPages() {
+            const currentPath = window.location.pathname;
+            const suggestions = {
+                'cat-spins': 'index',
+                'bonus': 'index#bonus-angebote',
+                'free-spins': 'index#bonus-angebote',
+                'erfahrungen': 'index#erfahrungen-review',
+                'kontakt': 'kontakt',
+                'datenschutz': 'datenschutz',
+                'impressum': 'impressum',
+                'haftung': 'haftungsausschluss',
+                'verantwortung': 'verantwortungsvolles-spielen'
+            };
+            
+            let foundSuggestion = null;
+            for (const [keyword, page] of Object.entries(suggestions)) {
+                if (currentPath.toLowerCase().includes(keyword) || 
+                    document.referrer.toLowerCase().includes(keyword)) {
+                    foundSuggestion = page;
+                    break;
+                }
+            }
+            
+            if (foundSuggestion) {
+                // Could add visual suggestion here
+                console.log('Suggested page based on URL:', foundSuggestion);
+            }
+        }
+        
+        document.addEventListener('DOMContentLoaded', suggestSimilarPages);
+        
+        // Auto-focus search input on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(() => {
+                document.getElementById('searchInput').focus();
+            }, 500);
+        });
+        
+        // Enhanced cat animation on hover
+        const catBody = document.querySelector('.cat-body');
+        if (catBody) {
+            catBody.addEventListener('mouseenter', function() {
+                this.style.animation = 'catBody 0.5s ease-in-out infinite';
+            });
+            
+            catBody.addEventListener('mouseleave', function() {
+                this.style.animation = 'catBody 3s ease-in-out infinite';
+            });
+        }
+        
+        // Add keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            // Escape key goes back
+            if (e.key === 'Escape') {
+                if (document.referrer && !document.referrer.includes('cat-spins.it.com')) {
+                    history.back();
+                }
+            }
+            
+            // Forward slash focuses search
+            if (e.key === '/' && !e.ctrlKey && !e.metaKey) {
+                e.preventDefault();
+                document.getElementById('searchInput').focus();
+            }
+        });
+        
+        // Add page transition effects
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add fade-in effect
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 0.3s ease';
+            
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+            }, 100);
+            
+            // Smooth link transitions
+            document.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    if (this.href && this.href.includes('cat-spins.it.com')) {
+                        e.preventDefault();
+                        const href = this.href;
+                        
+                        // Add fade-out effect
+                        document.body.style.opacity = '0';
+                        
+                        setTimeout(() => {
+                            window.location.href = href;
+                        }, 300);
+                    }
+                });
+            });
+        });
+        
+        // Report broken link functionality (simulated)
+        function setupBrokenLinkReport() {
+            const reportButton = document.createElement('button');
+            reportButton.textContent = 'Defekten Link melden';
+            reportButton.className = 'secondary-button';
+            reportButton.style.marginTop = '1rem';
+            
+            reportButton.addEventListener('click', function() {
+                const brokenUrl = window.location.href;
+                const referrerUrl = document.referrer;
+                
+                // In a real implementation, this would send data to your server
+                alert(`Vielen Dank für die Meldung!\n\nDefekter Link: ${brokenUrl}\nHerkunft: ${referrerUrl || 'Unbekannt'}\n\nWir werden das Problem schnellstmöglich beheben.`);
+                
+                // Disable button after reporting
+                this.disabled = true;
+                this.textContent = 'Gemeldet ✓';
+                this.style.opacity = '0.7';
+            });
+            
+            // Add to action buttons
+            const actionButtons = document.querySelector('.action-buttons');
+            if (actionButtons) {
+                actionButtons.appendChild(reportButton);
+            }
+        }
+        
+        document.addEventListener('DOMContentLoaded', setupBrokenLinkReport);
+    </script>
+</body>
+</html>

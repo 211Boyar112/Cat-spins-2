@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <meta name="description" content="Kontaktieren Sie das Team von cat-spins.it.com für Fragen, Feedback oder rechtliche Anfragen. Wir sind für Sie da!">
+    <link rel="canonical" href="https://cat-spins.it.com/kontakt">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Kontakt">
+    <meta property="og:description" content="Kontaktieren Sie uns für Fragen zu Cat Spins Casino und anderen Glücksspielinformationen">
+    <meta property="og:url" content="https://cat-spins.it.com/kontakt">
+    <meta property="og:type" content="website">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Kontakt",
+        "description": "Kontaktseite für cat-spins.it.com",
+        "url": "https://cat-spins.it.com/kontakt",
+        "datePublished": "2025-01-01",
+        "dateModified": "2025-01-07",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Cat Spins Guide",
+            "url": "https://cat-spins.it.com/"
+        }
+    }
+    </script>
+    
+    <style>
+        /* Reset & Base Styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            background-color: #f9f9f9; 
+            padding-bottom: 2rem;
+        }
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 0 20px; 
+        }
+        
+        /* Header */
+        .contact-header { 
+            background: linear-gradient(135deg, #2d1152 0%, #4a1e6b 100%); 
+            color: white; 
+            padding: 3rem 0; 
+            text-align: center; 
+            margin-bottom: 3rem;
+        }
+        .contact-header h1 { 
+            font-size: 2.2rem; 
+            margin-bottom: 1rem; 
+            font-weight: 700;
+        }
+        .contact-header p { 
+            font-size: 1.1rem; 
+            opacity: 0.9; 
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        /* Breadcrumb Navigation */
+        .breadcrumb {
+            padding: 1rem 0;
+            margin-bottom: 2rem;
+            background-color: #f0f4ff;
+            border-radius: 8px;
+        }
+        .breadcrumb ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            padding: 0 1rem;
+        }
+        .breadcrumb li {
+            display: flex;
+            align-items: center;
+        }
+        .breadcrumb li:not(:last-child):after {
+            content: '›';
+            margin-left: 0.5rem;
+            color: #8b5bb3;
+        }
+        .breadcrumb a {
+            color: #4a1e6b;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Main Content Layout */
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+        
+        /* Contact Form Section */
+        .contact-form-section { 
+            background-color: white; 
+            border-radius: 8px; 
+            padding: 2.5rem; 
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+        
+        .contact-info-section { 
+            background-color: white; 
+            border-radius: 8px; 
+            padding: 2.5rem; 
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+        
+        h2 { 
+            color: #4a1e6b; 
+            margin-bottom: 1.5rem; 
+            padding-bottom: 0.75rem; 
+            border-bottom: 2px solid #eee; 
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+        
+        h3 { 
+            color: #6b3c9a; 
+            margin: 1.5rem 0 1rem 0; 
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        
+        p { 
+            margin-bottom: 1.2rem; 
+            font-size: 1.05rem;
+        }
+        
+        /* Form Styles */
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #4a1e6b;
+        }
+        
+        .required:after {
+            content: ' *';
+            color: #ff6b6b;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border: 1px solid #d9e1ff;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.2s ease;
+        }
+        
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus,
+        select:focus {
+            outline: none;
+            border-color: #8b5bb3;
+            box-shadow: 0 0 0 3px rgba(139, 91, 179, 0.1);
+        }
+        
+        textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .checkbox-group input[type="checkbox"] {
+            margin-top: 0.2rem;
+            flex-shrink: 0;
+        }
+        
+        .checkbox-group label {
+            margin-bottom: 0;
+            font-weight: normal;
+        }
+        
+        /* Contact Info Styles */
+        .contact-methods {
+            display: grid;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .contact-method {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1.5rem;
+            background-color: #f8f5ff;
+            border-radius: 8px;
+            border: 1px solid #e9e1ff;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .contact-method:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(139, 91, 179, 0.1);
+        }
+        
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #4a1e6b 0%, #8b5bb3 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+        
+        .contact-details h4 {
+            margin-bottom: 0.5rem;
+            color: #4a1e6b;
+        }
+        
+        .contact-details p {
+            margin-bottom: 0;
+            color: #666;
+        }
+        
+        /* FAQ Section */
+        .faq-section {
+            background-color: white;
+            border-radius: 8px;
+            padding: 2.5rem;
+            margin: 3rem 0;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+        
+        .faq-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .faq-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .faq-question {
+            font-weight: 600;
+            color: #4a1e6b;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .faq-question:after {
+            content: '+';
+            font-size: 1.2rem;
+            color: #8b5bb3;
+        }
+        
+        .faq-question.active:after {
+            content: '−';
+        }
+        
+        .faq-answer {
+            color: #666;
+            display: none;
+        }
+        
+        /* Buttons */
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .submit-button {
+            background: linear-gradient(135deg, #4a1e6b 0%, #8b5bb3 100%);
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 8px;
+            border: none;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .submit-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(139, 91, 179, 0.3);
+        }
+        
+        .submit-button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background-color: #f0f4ff;
+            color: #4a1e6b;
+            padding: 0.8rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            border: 1px solid #d9e1ff;
+            transition: all 0.2s ease;
+        }
+        
+        .back-button:hover {
+            background-color: #e1e8ff;
+            color: #4a1e6b;
+            text-decoration: none;
+        }
+        
+        /* Status Messages */
+        .status-message {
+            padding: 1rem;
+            border-radius: 6px;
+            margin: 1rem 0;
+            display: none;
+        }
+        
+        .status-success {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            border: 1px solid #c8e6c9;
+        }
+        
+        .status-error {
+            background-color: #ffebee;
+            color: #c62828;
+            border: 1px solid #ffcdd2;
+        }
+        
+        /* Footer */
+        footer { 
+            background-color: #2d1152; 
+            color: white; 
+            padding: 3rem 0 2rem; 
+            margin-top: 4rem; 
+        }
+        .footer-links { 
+            display: flex; 
+            justify-content: center; 
+            flex-wrap: wrap; 
+            gap: 2rem; 
+            margin-bottom: 2rem; 
+        }
+        footer a { 
+            color: #ccc; 
+            text-decoration: none; 
+            font-size: 0.95rem;
+        }
+        footer a:hover { 
+            color: white; 
+            text-decoration: underline;
+        }
+        footer p {
+            color: #aaa;
+            font-size: 0.9rem;
+            margin-bottom: 0;
+            text-align: center;
+        }
+        
+        /* Last Update */
+        .last-update {
+            font-size: 0.9rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .contact-layout {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .contact-header { 
+                padding: 2rem 0; 
+                margin-bottom: 2rem;
+            }
+            .contact-header h1 { 
+                font-size: 1.8rem; 
+            }
+            
+            .contact-form-section,
+            .contact-info-section,
+            .faq-section {
+                padding: 2rem;
+            }
+            
+            h2 { 
+                font-size: 1.4rem; 
+            }
+            
+            h3 { 
+                font-size: 1.2rem; 
+            }
+            
+            .breadcrumb ul {
+                flex-direction: column;
+                gap: 0.3rem;
+            }
+            
+            .breadcrumb li:not(:last-child):after {
+                display: none;
+            }
+            
+            .contact-method {
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+            }
+            
+            .contact-icon {
+                margin-bottom: 1rem;
+            }
+            
+            .button-container {
+                flex-direction: column;
+            }
+            
+            .submit-button,
+            .back-button {
+                width: 100%;
+                text-align: center;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .contact-form-section,
+            .contact-info-section,
+            .faq-section {
+                padding: 1.5rem;
+            }
+            
+            .contact-header {
+                padding: 1.5rem 0;
+            }
+            
+            .footer-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+        }
+        
+        /* Print Styles */
+        @media print {
+            .contact-header {
+                background: none;
+                color: black;
+                padding: 1rem 0;
+            }
+            
+            .breadcrumb, .contact-form-section, .button-container, footer {
+                display: none;
+            }
+            
+            .contact-info-section,
+            .faq-section {
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="contact-header">
+        <div class="container">
+            <h1>Kontakt</h1>
+            <p>Haben Sie Fragen, Feedback oder Anregungen? Wir sind für Sie da!</p>
+        </div>
+    </header>
+    
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="https://cat-spins.it.com">Startseite</a></li>
+                <li>Kontakt</li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main class="container">
+        <div class="contact-layout">
+            <!-- Contact Form -->
+            <section class="contact-form-section">
+                <h2>Kontaktformular</h2>
+                <p>Füllen Sie das folgende Formular aus und wir werden uns so schnell wie möglich bei Ihnen melden.</p>
+                
+                <div id="statusMessage" class="status-message"></div>
+                
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name" class="required">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" class="required">E-Mail Adresse</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject" class="required">Betreff</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Bitte wählen Sie...</option>
+                            <option value="allgemein">Allgemeine Anfrage</option>
+                            <option value="bonus">Frage zu Bonusangeboten</option>
+                            <option value="technisch">Technische Frage</option>
+                            <option value="rechtlich">Rechtliche Anfrage</option>
+                            <option value="feedback">Feedback zur Website</option>
+                            <option value="werbung">Werbung & Partnerschaft</option>
+                            <option value="sonstiges">Sonstiges</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" class="required">Ihre Nachricht</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">
+                                Ich habe die <a href="datenschutz" target="_blank">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zu.
+                            </label>
+                        </div>
+                        
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">
+                                Ich möchte über neue Bonusangebote und Updates per E-Mail informiert werden.
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="button-container">
+                        <button type="submit" class="submit-button">Nachricht senden</button>
+                        <a href="https://cat-spins.it.com" class="back-button">Zurück zur Startseite</a>
+                    </div>
+                </form>
+            </section>
+            
+            <!-- Contact Information -->
+            <section class="contact-info-section">
+                <h2>Kontaktinformationen</h2>
+                <p>Sie können uns auch direkt über die folgenden Kontaktwege erreichen:</p>
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h4>E-Mail</h4>
+                            <p>Für allgemeine Anfragen:</p>
+                            <p><strong>info@cat-spins.it.com</strong></p>
+                            <p style="margin-top: 0.5rem; font-size: 0.9rem;">Antwortzeit: 1-2 Werktage</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">⚖️</div>
+                        <div class="contact-details">
+                            <h4>Rechtliche Anfragen</h4>
+                            <p>Für rechtliche und datenschutzbezogene Anfragen:</p>
+                            <p><strong>recht@cat-spins.it.com</strong></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">💼</div>
+                        <div class="contact-details">
+                            <h4>Werbung & Partnerschaften</h4>
+                            <p>Für Werbeanfragen und Partnerschaften:</p>
+                            <p><strong>werbung@cat-spins.it.com</strong></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 style="margin-top: 2.5rem;">Wichtige Hinweise</h3>
+                <ul style="color: #666;">
+                    <li>Bitte beachten Sie, dass wir keine Glücksspiele anbieten oder vermitteln</li>
+                    <li>Für Support-Anfragen zu konkreten Casinos wenden Sie sich bitte direkt an den jeweiligen Anbieter</li>
+                    <li>Wir können keine Auskünfte zu laufenden Spielen oder Gewinnen erteilen</li>
+                    <li>Alle E-Mails werden vertraulich behandelt</li>
+                </ul>
+            </section>
+        </div>
+        
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <h2>Häufig gestellte Fragen (FAQ)</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">Wie lange dauert es, bis ich eine Antwort erhalte?</div>
+                <div class="faq-answer">
+                    <p>Wir bemühen uns, alle Anfragen innerhalb von 1-2 Werktagen zu beantworten. In Stoßzeiten kann es etwas länger dauern.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Kann ich bei Ihnen Glücksspiele spielen?</div>
+                <div class="faq-answer">
+                    <p>Nein, wir sind ein reines Informationsportal. Wir bieten keine Glücksspiele an, sondern informieren lediglich über verschiedene Angebote. Für das eigentliche Spielen müssen Sie sich bei den jeweiligen Casinos registrieren.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Warum antwortet ihr nicht auf Support-Anfragen zu bestimmten Casinos?</div>
+                <div class="faq-answer">
+                    <p>Als Informationsportal haben wir keinen Zugriff auf die Kundendaten oder Konten bei den Casinos. Bei Problemen mit Ein- oder Auszahlungen, Kontosperrungen oder anderen casino-spezifischen Fragen müssen Sie sich direkt an den Support des jeweiligen Anbieters wenden.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Kann ich bei euch eine Beschwerde über ein Casino einreichen?</div>
+                <div class="faq-answer">
+                    <p>Wir können Beschwerden über Casinos entgegennehmen und weiterleiten, haben aber keine direkte Einflussmöglichkeit. Bei schwerwiegenden Problemen empfehlen wir, sich direkt an die Glücksspielaufsichtsbehörde des jeweiligen Landes zu wenden.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Wie kann ich Werbung auf eurer Seite schalten?</div>
+                <div class="faq-answer">
+                    <p>Für Werbeanfragen und Partnerschaften wenden Sie sich bitte an <strong>werbung@cat-spins.it.com</strong>. Bitte fügen Sie Informationen zu Ihrem Unternehmen und Ihrem Werbebudget bei.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Legal Notice -->
+        <div class="last-update">
+            <p><strong>Hinweis:</strong> Diese Kontaktseite dient ausschließlich der Kommunikation mit dem Betreiber dieser Informationswebsite. Für Glücksspiel-Support wenden Sie sich bitte direkt an die jeweiligen Casino-Anbieter. Letzte Aktualisierung: 07.01.2025</p>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="/">Startseite</a>
+                <a href="datenschutz">Datenschutzerklärung</a>
+                <a href="impressum">Impressum</a>
+                <a href="haftungsausschluss">Haftungsausschluss</a>
+                <a href="kontakt">Kontakt</a>
+            </div>
+            <p>&copy; 2025 cat-spins.it.com – Informationsportal zu Online-Casinos. Glücksspiel kann süchtig machen – spielen Sie verantwortungsvoll. Mindestalter: 18 Jahre.</p>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script>
+        // Form validation and submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const form = e.target;
+            const submitButton = form.querySelector('.submit-button');
+            const statusMessage = document.getElementById('statusMessage');
+            
+            // Validate form
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value.trim();
+            const privacy = document.getElementById('privacy').checked;
+            
+            if (!name || !email || !subject || !message || !privacy) {
+                showStatus('Bitte füllen Sie alle erforderlichen Felder aus.', 'error');
+                return;
+            }
+            
+            if (!validateEmail(email)) {
+                showStatus('Bitte geben Sie eine gültige E-Mail-Adresse ein.', 'error');
+                return;
+            }
+            
+            // Disable submit button
+            submitButton.disabled = true;
+            submitButton.textContent = 'Wird gesendet...';
+            
+            // Simulate form submission (in real implementation, this would be an AJAX call)
+            setTimeout(() => {
+                // In a real implementation, you would send the data to your server here
+                // For now, we'll simulate a successful submission
+                
+                showStatus('Vielen Dank für Ihre Nachricht! Wir melden uns innerhalb von 1-2 Werktagen bei Ihnen.', 'success');
+                
+                // Reset form
+                form.reset();
+                
+                // Re-enable submit button
+                submitButton.disabled = false;
+                submitButton.textContent = 'Nachricht senden';
+                
+                // Scroll to status message
+                statusMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }, 1500);
+        });
+        
+        // Email validation function
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+        }
+        
+        // Show status message
+        function showStatus(message, type) {
+            const statusMessage = document.getElementById('statusMessage');
+            statusMessage.textContent = message;
+            statusMessage.className = `status-message status-${type}`;
+            statusMessage.style.display = 'block';
+            
+            // Auto-hide after 10 seconds
+            setTimeout(() => {
+                statusMessage.style.display = 'none';
+            }, 10000);
+        }
+        
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                const isActive = this.classList.contains('active');
+                
+                // Close all other FAQs
+                document.querySelectorAll('.faq-question').forEach(q => {
+                    if (q !== this) {
+                        q.classList.remove('active');
+                        q.nextElementSibling.style.display = 'none';
+                    }
+                });
+                
+                // Toggle current FAQ
+                this.classList.toggle('active');
+                
+                if (isActive) {
+                    answer.style.display = 'none';
+                } else {
+                    answer.style.display = 'block';
+                }
+            });
+        });
+        
+        // Initialize all FAQ answers as hidden
+        document.querySelectorAll('.faq-answer').forEach(answer => {
+            answer.style.display = 'none';
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const headerOffset = 100;
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                    
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Copy email to clipboard functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const emailElements = document.querySelectorAll('.contact-details strong');
+            
+            emailElements.forEach(element => {
+                if (element.textContent.includes('@')) {
+                    element.style.cursor = 'pointer';
+                    element.title = 'E-Mail-Adresse kopieren';
+                    
+                    element.addEventListener('click', function() {
+                        const email = this.textContent.trim();
+                        navigator.clipboard.writeText(email).then(() => {
+                            const originalText = this.textContent;
+                            this.textContent = 'E-Mail kopiert!';
+                            this.style.color = '#4a1e6b';
+                            
+                            setTimeout(() => {
+                                this.textContent = originalText;
+                                this.style.color = '';
+                            }, 2000);
+                        });
+                    });
+                }
+            });
+        });
+        
+        // Form auto-save functionality (optional)
+        function autoSaveForm() {
+            const form = document.getElementById('contactForm');
+            const formData = new FormData(form);
+            const data = {};
+            
+            formData.forEach((value, key) => {
+                data[key] = value;
+            });
+            
+            localStorage.setItem('contactFormDraft', JSON.stringify(data));
+        }
+        
+        // Load saved form data (optional)
+        function loadFormDraft() {
+            const savedData = localStorage.getItem('contactFormDraft');
+            if (savedData) {
+                const data = JSON.parse(savedData);
+                Object.keys(data).forEach(key => {
+                    const element = document.getElementById(key);
+                    if (element) {
+                        if (element.type === 'checkbox') {
+                            element.checked = data[key] === 'on';
+                        } else {
+                            element.value = data[key];
+                        }
+                    }
+                });
+            }
+        }
+        
+        // Clear form draft on successful submission
+        function clearFormDraft() {
+            localStorage.removeItem('contactFormDraft');
+        }
+        
+        // Set up auto-save listeners
+        document.getElementById('contactForm').addEventListener('input', autoSaveForm);
+        
+        // Load draft on page load
+        document.addEventListener('DOMContentLoaded', loadFormDraft);
+        
+        // Clear draft on form submission
+        document.getElementById('contactForm').addEventListener('submit', clearFormDraft);
+    </script>
+</body>
+</html>
