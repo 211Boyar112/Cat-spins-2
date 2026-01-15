@@ -847,21 +847,6 @@
             document.body.classList.add('loaded');
         });
         
-        // Header buttons interaction
-        document.querySelectorAll('.header-btn').forEach(btn => {
-            btn.addEventListener('click', function(e) {
-                e.preventDefault();
-                const btnText = this.textContent;
-                
-                // Simulate button actions
-                if (btnText.includes('Login')) {
-                    alert('Login-Funktionalität würde hier implementiert werden. In der realen Implementierung würde dies zum Login-Bereich weiterleiten.');
-                } else if (btnText.includes('Willkommensbonus')) {
-                    alert('Bonus-Funktionalität würde hier implementiert werden. In der realen Implementierung würde dies zum Registrierungsbereich weiterleiten.');
-                }
-            });
-        });
-        
         // Image error handling
         document.querySelectorAll('img').forEach(img => {
             img.addEventListener('error', function() {
@@ -871,4 +856,5 @@
         });
     </script>
 </body>
+
 </html>
